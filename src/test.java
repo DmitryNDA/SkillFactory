@@ -15,6 +15,9 @@ public class test {
         customTank.turnRight();
         customTank.goForward(-30);
         customTank.printPosition();
+        customTank.turnRight();
+        customTank.goForward(50);
+        customTank.printPosition();
     }
 
 
