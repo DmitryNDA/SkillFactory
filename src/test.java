@@ -13,11 +13,7 @@ public class test {
         customTank.goBackward(20);
         customTank.printPosition();
         customTank.turnRight();
-        customTank.goForward(-30);
-        customTank.printPosition();
-        customTank.turnRight();
-        customTank.goForward(50);
-        customTank.printPosition();
+
     }
 
 
