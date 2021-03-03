@@ -8,11 +8,7 @@ public class test {
         Tank customTank = new Tank(-20, -30, 200);
         customTank.goBackward(50);
         customTank.printPosition();
-        customTank.goBackward(-50);
-        customTank.printPosition();
-        customTank.goBackward(20);
-        customTank.printPosition();
-        customTank.turnRight();
+
 
     }
 
