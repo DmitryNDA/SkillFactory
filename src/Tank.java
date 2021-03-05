@@ -1,22 +1,37 @@
+import javax.print.DocFlavor;
+
 public class Tank {
-    int x, y;
-    int dir;
-    int fuel;
+    static final String MODEL = "T34";
+    static int ntanks;
+
+    private int x, y;
+    private int dir;
+    private int fuel;
+    private int n;
+
 
     public Tank() {
+
         this.fuel = 100;
+        n = ++ntanks;
+
+
     }
 
     public Tank(int x, int y) {
         this.x = x;
         this.y = y;
         this.fuel = 100;
+        n = ++ntanks;
+
+
     }
 
     public Tank(int x, int y, int fuel) {
         this.x = x;
         this.y = y;
         this.fuel = fuel;
+        n = ++ntanks;
     }
 
 
@@ -37,7 +52,7 @@ public class Tank {
     }
 
     public void printPosition() {
-        System.out.println("The Tank is at " + x +", " + y + " now. Fuel = " + fuel);
+        System.out.println("The Tank " + MODEL + "-" + n + " is at " + x +", " + y + " now. Fuel = " + fuel);
     }
 
     public void turnLeft() {
